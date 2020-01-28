@@ -283,7 +283,26 @@ def long_name_steals_a_ton?
 end
 
 
-
+def top_player_of_something(stat_name)
+  #call player list variable
+  game_hash.each do |place, team|
+    team[:players].each do |player|
+      topstat = 0
+      topstate_name = nil
+      if player[:stat_name] > topstat
+        topstat = player[:stat_name]
+        topstate_name = player[:player_name]
+      end
+      
+    end
+    binding.pry
+  end
+    return topstate_name 
+  #identify stat requested
+  #loop through players and compare each to find highest stat
+  #return player name or stats?
+  #accepts stat name and then interates through all of the players to find the player with the highest
+end
 
 
 
